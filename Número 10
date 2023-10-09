@@ -1,0 +1,20 @@
+# Faça um programa que pergunte em que turno você estuda.
+# Peça para digitar M-matutino ou V-vespertino ou N-noturno.
+# Imprima a mensagem “Bomdia!” ou “BoaNoite” ou “Valorinválido”, conforme o caso.
+
+turno = str (input("Em qual turno você estuda (M matutino - V vespertino - N nortuno): "))
+
+if turno == 'M' or turno == 'm' :
+    print("Bom dia!")
+    
+elif turno == 'N' or turno == 'n' :
+    print("Boa noite!")
+    
+elif turno == 'V' or turno == 'v' :
+    print("Boa tarde!")
+
+else :
+    print("Valor inválido!")
+    
+
+    
