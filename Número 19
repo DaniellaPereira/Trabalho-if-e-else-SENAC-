@@ -1,0 +1,32 @@
+x1 = int (input("Digite um numero: "))
+x2 = int (input("Digite outro numero: "))
+
+x = int (input("Qual operação você deseja realizar: 1- MULTIPLICAÇÃO, 2-DIVISÃO, 3- SUBTRAÇÃO, 4- ADIÇÃO: "))
+
+if x == 1 :
+    x = x1 * x2
+    print("",x)
+    
+elif x == 2 :
+    x = x1 / x2
+    print("",x)
+    
+elif x == 3 :
+    x = x1 - x2
+    print("",x)
+    
+elif x == 4 :
+    x = x1 + x2
+    print("",x)
+    
+if x % 2 == 0 :
+    print("Número par")
+    
+else :
+    print("Número ímpar")
+    
+if x > 0 :
+    print("Número positivo")
+    
+else :
+    print("Número negativo")
