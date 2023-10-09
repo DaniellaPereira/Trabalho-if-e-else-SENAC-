@@ -1,0 +1,29 @@
+nota1 = float (input("Digite o valor da sua primeira nota: "))
+print("A sua primeira nota é: ", nota1)
+
+nota2 = float (input("Digite o valor da sua segunda nota: "))
+print("A sua segunda nota é: ", nota2)
+
+media_nota = (nota1 + nota2) / 2 
+print("A sua média é de: ", media_nota)
+
+if media_nota <= 10.0 and media_nota >= 9.0 : 
+    print("O seu conceito é A")
+    
+elif media_nota < 9.0 and media_nota >= 7.5 :
+    print("O seu conceito é B")
+    
+elif media_nota < 7.5 and media_nota >= 6.0 :
+    print("O seu conceito é C")
+    
+elif media_nota < 6.0 and media_nota >= 4.0 :
+    print("O seu conceito é D")
+
+elif media_nota < 4.0 and media_nota >= 0.0 :
+    print("O seu conceito é E")
+    
+if media_nota <= 10.0 and media_nota >= 6.0 :
+    print("Você está aprovado")
+    
+else :
+    print("Você está reprovado")
