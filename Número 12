@@ -1,0 +1,34 @@
+valor_hora = float (input("Digite o valor da sua hora trabalhada: "))
+quantidade_hora = float(input("Digite a quantidade de hora trabalhada: "))
+
+salario_bruto = valor_hora * quantidade_hora
+
+print("O valor do seu salário bruto é de: ", salario_bruto)
+
+if (salario_bruto <= 900.00) :
+    x = 0
+    print("Está ISENTO do desconto de IR")
+    
+elif (salario_bruto <= 1500.00) :
+    x = salario_bruto * 0.05
+    print("O desconto de IR será: ", x)
+    
+if (salario_bruto <= 2500.00) :
+    x = salario_bruto * 0.10
+    print("O desconto de IR será: ", x)
+    
+elif (salario_bruto > 2500.00) :
+    x = salario_bruto * 0.20 
+    print("O desconto de IR será: ", x)
+    
+desconto_inss = salario_bruto * 0.10
+print("O desconto do INSS será de: ", desconto_inss)
+    
+deposito_fgts = salario_bruto * 0.11
+print("O valor depositado para o FGTS será de: ", deposito_fgts)
+
+total_desconto = x + desconto_inss
+print("O valor total de descontos será de: ", total_desconto)
+
+salario_liquido = salario_bruto - total_desconto
+print("O valor do salario líquido será de: ", salario_liquido)
