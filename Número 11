@@ -1,0 +1,40 @@
+# As organizações CSM resolveram dar um aumento de salário aos seus colaboradores 
+# e lhe contrataram para desenvolver o programa que calculará os reajustes.
+
+# Faça um programa que recebe o salário de um colaborador e o reajuste segundo o seguinte critério,baseado no salário atual;
+# Salários até RS280,00(incluindo):aumento de 20%;
+# Salários entre RS280,00eRS700,00:aumento de 15%;
+# Salários entre RS700,00 e RS1500,00:aumento de 10%;
+# Salários de RS1500,00 em diante:aumento de 5% Após o aumento serrealizado;
+
+# Informe na tela os seguintes dados:
+# 1º O salário antes do reajuste;
+# 2º O percentual de aumento aplicado;
+# 3º O valor do aumento;
+# 4º O novo salário, após o aumento.
+
+salario_inicial = eval (input("Digite o valor do seu salario: "))
+
+if (salario_inicial <= 280.00) :
+    x = salario_inicial * 0.20
+    print("O seu salario terá um reajuste de 20% no valor de: ",x)
+    salario_inicial = salario_inicial + x
+    print("O salario ficará em: ",salario_inicial)
+    
+elif (salario_inicial > 280.00 and salario_inicial < 700.00) :
+    x = salario_inicial * 0.15
+    print("O seu salario terá um reajuste de 15% no valor de: ",x)
+    salario_inicial = salario_inicial + x
+    print("O salario ficará em: ",salario_inicial)
+    
+if (salario_inicial > 700.00 and salario_inicial < 1500.00 ) :
+    x = salario_inicial * 0.10
+    print("O seu salario terá um reajuste de 10% no valor de: ",x)
+    salario_inicial = salario_inicial + x
+    print("O salario ficará em: ",salario_inicial)
+    
+elif (salario_inicial >= 1500.00) :
+    x = salario_inicial * 0.05
+    print("O seu salario terá um reajuste de 5% no valor de: ",x)
+    salario_inicial = salario_inicial + x
+    print("O salario ficará em: ",salario_inicial)
