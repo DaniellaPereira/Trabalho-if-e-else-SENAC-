@@ -1,0 +1,26 @@
+# Escreva um programa que pergunte o dia, mês e ano do aniversário de uma pessoa.
+# diga se a data é válida ou não
+# Caso não seja, diga o motivo
+# Suponha que todos os meses tem 31 dias e que estejamos no ano de 2013.
+
+dia = int (input("Digite o dia em que nasceu: "))
+mês = int (input("Digite o mês em que nasceu: "))
+ano = int (input("Digite o ano em que nasceu: "))
+
+if dia <= 31 :
+    print("Data válida")
+    
+elif dia > 31 :
+    print("Data inválida")
+    
+if mês <= 12 :
+    print("Mês válido")
+    
+elif mês > 12 :
+    print("Mês inválido")
+    
+if ano < 2013 :
+    print("Ano válido")
+    
+else :
+    print("Ano inválido")
