@@ -11,16 +11,16 @@ if dia <= 31 :
     print("Data válida")
     
 elif dia > 31 :
-    print("Data inválida")
+    print("Data inválida, dia inexistente")
     
 if mês <= 12 :
     print("Mês válido")
     
 elif mês > 12 :
-    print("Mês inválido")
+    print("Mês inválido, mês inexistente")
     
 if ano < 2013 :
     print("Ano válido")
     
 else :
-    print("Ano inválido")
+    print("Ano inválido, ano inexistente")
