@@ -1,0 +1,10 @@
+# Escreva um programa que recebe um inteiro e diga se é par ou ímpar.
+# Dica:Use o operador matemático % (resto da divisão ou módulo) e o teste condicional if.
+
+x = int (input("Digite um número: "))
+
+if x % 2 == 0 :
+    print("É PAR")
+    
+else : 
+    print("É impar")
