@@ -32,3 +32,4 @@ print("O valor total de descontos será de: ", total_desconto)
 
 salario_liquido = salario_bruto - total_desconto
 print("O valor do salario líquido será de: ", salario_liquido)
+
