@@ -1,0 +1,17 @@
+# Crie um programa que peça um número ao usuário e armazene ele na variável x
+# Depois peça outro número e armazene na variável y
+# Mostre esses números.
+# Em seguida, faça com que x passe a ter o valor de y,e que y passe a ter o valor de x.
+
+x = eval (input("Digite um numero: "))
+y = eval (input("Digite outro numero: "))
+
+print ("O valor de x é: ", x)
+print ("O valor de y é: ", y)
+
+z = x
+x = y  
+y = z 
+
+print ("O valor de x agora é: ", x)
+print ("O valor de y agora é: ", y)
